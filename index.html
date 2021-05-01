@@ -121,10 +121,22 @@
     <h3>Assignment 11</h3>
     <p class="p1">My blocks for black and white hat visualizations, and my remade "misleading viz from the media."</p>
     <ul>
-        <li>My <a href="" target="_blank">black-hat visualization</a> using mushroom data from the 
+        <li>My <a href="https://bl.ocks.org/aejurgensen/raw/0bcdf4961c585bf433ef9f93e68862df/?raw=true" target="_blank">black-hat visualization</a> 
+            using mushroom data from the 
             <a href="https://archive.ics.uci.edu/ml/datasets/Mushroom" target="_blank">UCI ML Data Reposirot</a></li>
             <ul>
-                <li></li>
+                <li>Two variables (odor and edibility) are combined and displayed along the x-axis, making 
+                    the tick labels impossible to read, and the data confusing.  The two variables should have 
+                    been encoded separately for clarity (e.g. only one on the x-axis and the other as color).
+                </li>
+                <li>The bars don't occur in any sensical order.</li>
+                <li>The bars are all filled with yellow, a difficult color to distinguish on a white 
+                    background since there is no distinct stroke around the bars.
+                </li>
+                <li>There are no annotations or tooltips to indicate the actual values of the bars, nor 
+                    are there any horizontal lines in the background to help guide the user's eye as they
+                    try to "read" the values of the bars.</li>
+                <li>The x-axis is not labeled and the categories are not obvious.</li>
                 <li>The source of the data is not provided.</li>
             </ul>
         <li>My <a href="https://bl.ocks.org/aejurgensen/raw/75aab9c136f035741018cd815f3b44be/?raw=true" target="_blank">white-hat</a> visualization using the same mushroom data.
@@ -134,7 +146,8 @@
                     variable (edibility) is encoded separately as color.
                 </li>
                 <li>Annotations with values are provided above each bar.</li>
-                <li>The y-axis ticks begin at 0!</li>
+                <li>The odor groups are ordered from the one with the tallest bar to the one with the shortest.</li>
+                <li>The y-axis ticks begin at 0.</li>
                 <li>The y-axis is labeled.</li>
                 <li>A legend is provided for color.</li>
                 <li>The color red associated with "poisonous," the dangerous category.</li>
